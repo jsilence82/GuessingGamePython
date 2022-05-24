@@ -2,9 +2,10 @@ import tkinter as tk
 import random
 
 window = tk.Tk()
-window.geometry("600x400")
+window.geometry("400x400")
 window.config(bg="#ffffff")
-window.title("Guessing Game")
+window.resizable(height=0, width=0)
+window.title("Take a Guess")
 
 # Declare global variables. random computer generated number between 0 and 100. tries = number of .
 computer_number = random.randint(0, 100)
@@ -55,22 +56,22 @@ def play_game():
 
 # UI placement
 exit_button = tk.Button(window, text="Exit Game", font=("Arial", 14), fg="Black", bg="#ffffff", command=exit)
-exit_button.place(x=300, y=320)
+exit_button.place(x=250, y=320)
 
 
-title = tk.Label(window, text="Guessing Game", font=("Arial", 24), fg="Black", bg="#ffffff")
+title = tk.Label(window, text="Take a Guess", font=("Arial", 24), fg="Black", bg="#ffffff")
 result = tk.Label(window, text="Click New Game to start", font=("Arial", 12), fg="Black", bg="#ffffff", justify=tk.LEFT)
-title.place(x=170, y=50)
-result.place(x=180, y=210)
+title.place(x=75, y=50)
+result.place(x=75, y=210)
 
 
 play_button = tk.Button(window, text="New Game", font=("Arial", 14), fg="Black", bg="#ffffff", command=new_game)
 guess_button = tk.Button(window, text="Guess", font=("Arial", 14), state='disabled', fg="Black", bg="#ffffff", command=play_game)
-guess_button.place(x=400, y=147)
-play_button.place(x=170, y=320)
+guess_button.place(x=275, y=150)
+play_button.place(x=75, y=320)
 
 guessed_number = tk.StringVar()
 number_form = tk.Entry(window, font=("Arial", 12), state='disabled', textvariable=guessed_number)
-number_form.place(x=180, y=150)
+number_form.place(x=75, y=165)
 
 window.mainloop()
