@@ -47,7 +47,7 @@ def play_game():
             hint = "The number lies between {} and 100".format(user_guess)
         result += "\n\nHINT :\n" + hint
     else:
-        result = "Congrats! \nYou've guessed the correct number after {} tries!".format(tries)
+        result = "Congrats! \nYou've guessed the number after \n{} tries!".format(tries)
         guess_button.configure(state='disabled')
         result += "\n" + "Click New Game to start a new game"
 
