@@ -34,16 +34,16 @@ def play_game():
         if userGuess > 100 or userGuess < 0:
             hint = "Woops. \nYou're supposed to guess between 1 and 100. Try again"
         elif userGuess >= (TARGET - 5) and userGuess <= (TARGET + 5):
-            hint = "Getting hot."
+            hint = "Getting hot. Within 5"
         elif userGuess  >= (TARGET - 10) and userGuess <= (TARGET + 10):
-            hint = "Getting warmer."
+            hint = "Getting warmer. Within 10"
         elif TARGET < userGuess:
             hint = "The number lies between 0 and {}".format(userGuess)
         else:
             hint = "The number lies between {} and 100".format(userGuess)
         result += "\n\nHINT :\n" + hint
     else:
-        result = "Congrats! You've guessed the correct number after {} tries!".format(RETRIES)
+        result = "Congrats! \nYou've guessed the correct number after {} tries!".format(RETRIES)
         guess_button.configure(state='disabled')
         result += "\n" + "Click New Game to start a new game"
 
