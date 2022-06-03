@@ -17,7 +17,6 @@ window.title("Take a Guess")
 computer_number = random.randint(0, 100)
 tries = 0
 
-
 # Configure the result label to display the results from the game's main loop.
 def update_result(text):
     result.config(text=text)
