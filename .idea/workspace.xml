@@ -4,7 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04c2a42b-06e9-4cd3-a14b-941209180ffa" name="Changes" comment="Worked out best score label" />
+    <list default="true" id="04c2a42b-06e9-4cd3-a14b-941209180ffa" name="Changes" comment="Worked out best score label.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guessingGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/guessingGame.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653400042751</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Worked out best score label.">
+      <created>1654263037716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654263037716</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated GUI, and hinting system" />
     <MESSAGE value="Worked out best score label" />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked out best score label" />
+    <MESSAGE value="Worked out best score label." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked out best score label." />
   </component>
 </project>

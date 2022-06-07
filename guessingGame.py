@@ -15,7 +15,7 @@ window.title("Take a Guess")
 # Global variables. Random computer generated number between 0 and 100. Tries = number of user attempts.
 # Used by new_game function and the main_loop function.
 computer_number = random.randint(0, 100)
-tries = 0
+tries = 15
 
 # Configure the result label to display the results from the game's main loop.
 def update_result(text):
@@ -26,9 +26,11 @@ def update_result(text):
 def new_game():
     guess_button.config(state='normal')
     number_form.config(state='normal')
+    guesses_numbers.config(state='normal')
     global computer_number, tries
     computer_number = random.randint(0, 100)
-    tries = 0
+    tries = 15
+    guesses_numbers.config(text=str(tries))
     update_result(text="Guess a number between\n 1 and 100")
 
 
@@ -40,8 +42,14 @@ def play_game():
     try:
         user_guess = int(number_form.get())
 
-        if user_guess != computer_number:
-            tries += 1
+        if tries == 0:
+            result = "Sorry. Out of guesses. \nThe correct number is {}".format(str(computer_number))
+            guess_button.configure(state='disabled')
+            result += "\n" + "Click New Game to start a new game"
+
+
+        elif user_guess != computer_number:
+            tries -= 1
 
             result = "Nope, that's not the number. Try again"
             if user_guess > 100 or user_guess < 0:
@@ -64,13 +72,18 @@ def play_game():
         result = "Are you sure that's a number? Try again"
 
     update_result(result)
+    guesses_numbers.config(text=str(tries))
 
 
 # UI place Labels and titles
-title = tk.Label(window, text="Take a Guess", font=("Arial", 24), fg="Black", bg="#ffffff", justify=tk.CENTER)
+title = tk.Label(window, text="Take a Guess", font=("Arial", 24), fg="Black", bg="#ffffff")
 result = tk.Label(window, text="Click New Game to start",
                   font=("Arial", 12), fg="Black", bg="#ffffff", justify=tk.LEFT)
-title.place(x=75, y=50)
+guesses = tk.Label(window, text="Guesses Left: ", font=("Arial", 15), fg="Black", bg="#ffffff")
+guesses_numbers = tk.Label(window, text=str(tries), font=("Arial", 15), fg="Black", bg="#ffffff")
+guesses.place(x=100, y=100)
+guesses_numbers.place(x=230, y=100)
+title.place(x=75, y=30)
 result.place(x=75, y=210)
 
 
