@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="04c2a42b-06e9-4cd3-a14b-941209180ffa" name="Changes" comment="Worked out best score label.">
+    <list default="true" id="6d3274da-207f-4ef6-a4e8-6d2668693766" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guessingGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/guessingGame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessingGamePython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GuessingGamePython.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--follow-tags" />
-        <option name="title" value="Current Branch" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="29CggwQ13mcoZocUnRm9F5FKLv7" />
+  <component name="ProjectId" id="2DWR3xD3fZLXX7nAK4AzOBgw0cJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,11 +26,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
@@ -56,9 +37,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/AppData/Local/Programs/Python/Python310/python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/guessingGame.py" />
@@ -79,55 +60,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="04c2a42b-06e9-4cd3-a14b-941209180ffa" name="Changes" comment="" />
-      <created>1652622596963</created>
+      <changelist id="6d3274da-207f-4ef6-a4e8-6d2668693766" name="Changes" comment="" />
+      <created>1660812666398</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652622596963</updated>
+      <updated>1660812666398</updated>
     </task>
-    <task id="LOCAL-00001" summary="Updated GUI, and hinting system">
-      <created>1653377656147</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1653377656147</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Updated GUI, and hinting system">
-      <created>1653393165222</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1653393165222</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Updated GUI, and hinting system">
-      <created>1653397695313</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1653397695313</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated GUI, and hinting system">
-      <created>1653399732171</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1653399732171</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated GUI, and hinting system">
-      <created>1653400042751</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1653400042751</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Worked out best score label.">
-      <created>1654263037716</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1654263037716</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,11 +78,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated GUI, and hinting system" />
-    <MESSAGE value="Worked out best score label" />
-    <MESSAGE value="Worked out best score label." />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked out best score label." />
   </component>
 </project>

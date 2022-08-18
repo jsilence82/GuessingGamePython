@@ -17,6 +17,7 @@ window.title("Take a Guess")
 computer_number = random.randint(0, 100)
 tries = 15
 
+
 # Configure the result label to display the results from the game's main loop.
 def update_result(text):
     result.config(text=text)
@@ -47,7 +48,6 @@ def play_game():
             guess_button.configure(state='disabled')
             result += "\n" + "Click New Game to start a new game"
 
-
         elif user_guess != computer_number:
             tries -= 1
 
@@ -65,7 +65,7 @@ def play_game():
                 hint = "The number lies between {} and 100".format(user_guess)
             result += "\n\nHINT :\n" + hint
         else:
-            result = "Congrats! \nYou've guessed the number after \n{} tries!".format(tries)
+            result = "Congrats! \nYou've guessed the number in \n{} tries!".format(15-tries)
             guess_button.configure(state='disabled')
             result += "\n" + "Click New Game to start a new game"
     except Exception as e:
