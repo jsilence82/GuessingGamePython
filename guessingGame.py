@@ -2,7 +2,6 @@
 import tkinter as tk
 import random
 
-
 # Tkinter configure the game window. Window is not resizable to prevent user from enlarging the window since the
 # buttons are not resizeable.
 window = tk.Tk()
@@ -10,7 +9,6 @@ window.geometry("400x400")
 window.config(bg="#ffffff")
 window.resizable(width=False, height=False)
 window.title("Take a Guess")
-
 
 # Global variables. Random computer generated number between 0 and 100. Tries = number of user attempts.
 # Used by new_game function and the main_loop function.
@@ -20,7 +18,7 @@ tries = 15
 
 # Configure the result label to display the results from the game's main loop.
 def update_result(text):
-    result.config(text=text)
+    result_label.config(text=text)
 
 
 # Function to initialize a new game when the "New Game" button is pressed
@@ -37,7 +35,6 @@ def new_game():
 
 # Game loop. Exception placed in case the user enters an invalid value.
 def play_game():
-
     global tries
 
     try:
@@ -65,10 +62,10 @@ def play_game():
                 hint = "The number lies between {} and 100".format(user_guess)
             result += "\n\nHINT :\n" + hint
         else:
-            result = "Congrats! \nYou've guessed the number in \n{} tries!".format(15-tries)
+            result = "Congrats! \nYou've guessed the number in \n{} tries!".format(15 - tries)
             guess_button.configure(state='disabled')
             result += "\n" + "Click New Game to start a new game"
-    except Exception as e:
+    except ValueError:
         result = "Are you sure that's a number? Try again"
 
     update_result(result)
@@ -77,15 +74,14 @@ def play_game():
 
 # UI place Labels and titles
 title = tk.Label(window, text="Take a Guess", font=("Arial", 24), fg="Black", bg="#ffffff")
-result = tk.Label(window, text="Click New Game to start",
-                  font=("Arial", 12), fg="Black", bg="#ffffff", justify=tk.LEFT)
+result_label = tk.Label(window, text="Click New Game to start",
+                        font=("Arial", 12), fg="Black", bg="#ffffff", justify=tk.LEFT)
 guesses = tk.Label(window, text="Guesses Left: ", font=("Arial", 15), fg="Black", bg="#ffffff")
 guesses_numbers = tk.Label(window, text=str(tries), font=("Arial", 15), fg="Black", bg="#ffffff")
 guesses.place(x=100, y=100)
 guesses_numbers.place(x=230, y=100)
 title.place(x=75, y=30)
-result.place(x=75, y=210)
-
+result_label.place(x=75, y=210)
 
 # UI place buttons
 exit_button = tk.Button(window, text="Exit Game", font=("Arial", 14), fg="Black", bg="#ffffff", command=exit)
@@ -100,7 +96,6 @@ window.bind('<Return>', lambda event=None: guess_button.invoke())
 
 guess_button.place(x=275, y=150)
 play_button.place(x=75, y=320)
-
 
 # UI place forms
 guessed_number = tk.StringVar()
